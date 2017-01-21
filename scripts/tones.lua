@@ -1,4 +1,4 @@
- function love.update(dt)
+ function tones()
     if love.keyboard.isDown("q") then  
         tone = love.audio.newSource("sound/tone1.wav", "static")  
         tone: play()
