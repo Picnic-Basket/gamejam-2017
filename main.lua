@@ -37,16 +37,13 @@ end
 function love.update(dt)
   world:update(dt) --this puts the world into motion
  
-  --here we are going to create some keyboard events
+  --Character Movement
     require("scripts/characterMovement")
     characterMovement()
 
-
-  --Calls the function that plays the music notes
+  --Music Notes
     require("scripts/tones")
-    tones()
-
-
+    tones() 
 end
 
 function love.draw()
