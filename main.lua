@@ -1,5 +1,11 @@
 
 function love.load()
+    tone1 = love.audio.newSource("sound/tone1.wav", "static")
+    tone2 = love.audio.newSource("sound/tone2.wav", "static")
+    tone3 = love.audio.newSource("sound/tone3.wav", "static")
+    tone4 = love.audio.newSource("sound/tone4.wav", "static")
+    tone5 = love.audio.newSource("sound/tone5.wav", "static")
+
     love.physics.setMeter(64) --the height of a meter our worlds will be 64px
     world = love.physics.newWorld(0, 9.81*64, true) --create a world for the bodies to exist in with horizontal gravity of 0 and vertical gravity of 9.81
 
@@ -43,7 +49,7 @@ function love.update(dt)
 
   --Music Notes
     require("scripts/tones")
-    tones() 
+    tones(tone1, tone2, tone3, tone4, tone5)
 end
 
 function love.draw()
