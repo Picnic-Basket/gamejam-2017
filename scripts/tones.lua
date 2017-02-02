@@ -13,7 +13,7 @@
     end
     if not love.keyboard.isDown("w") and tone2:isPlaying() then
         love.audio.stop(tone2)
-    end
+    enda
 
 
     if love.keyboard.isDown("e") and not tone3:isPlaying() then  
@@ -38,4 +38,3 @@
     if not love.keyboard.isDown("s") and tone5:isPlaying() then
         love.audio.stop(tone5)
     end
-end
